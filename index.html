@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    <title>SIGANE | Planilla de Registro</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/plugins/bootstrap/datepicker.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/pace/pace-theme-big-counter.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/header-user-dropdown.css">
+  
+    
+  </head>
+
+  <body class="bg-light">
+
+
+<header class="header-user-dropdown fixed-top">
+
+  <div class="header-limiter">
+    <h1><img class="d-block mx-auto mb-4" src="assets/img/iutoms.jpg" alt="" width="52" height="52"></h1>
+
+    <nav>
+      <a href="#">Nuevo</a>
+      <a href="#">Modificar</a>
+      <a href="#">Consultar</a>
+      <a href="#">Eliminar</a>
+      <a href="#">Reportes <span class="header-new-feature">new</span></a>
+    </nav>
+
+
+    <div class="header-user-menu">
+      <img src="assets/img/2.jpg" alt="User Image"/>
+
+      <ul>
+        <li><a href="logout.php"><i class="fa fa-user"></i> Crear Usuario</a></li>
+        <li class="divider"></li>
+        <li><a href="logout.php"><i class="fa fa-gear fa-fw"></i> Configuración</a></li>
+        <li class="divider"></li>
+        <li><a href="logout.php" class="highlight"><i class="fa fa-sign-out fa-fw"></i> Cerrar sesión</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+</header><br><br><br>
+
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <!-- <img class="d-block mx-auto mb-4" src="assets/img/iutoms.jpg" alt="" width="72" height="72"> -->
+        <h2>Sistema de Registro de Pre-Inscripción</h2>
+        <p class="lead"></p>
+      </div>
+    
+      <div class="row">
+        <div class="col-md-3 order-md-1 mb-3">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted"></span>
+            
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0"><a href="checkout.html"><i class="fas fa-user-plus"></i> Nuevo Registro</a></h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Modificar Registro</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Consultar Registro</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+             
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Eliminar Registro</h6>
+               <small class="text-muted">Brief description</small>
+              </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Reportes</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+            </li>            
+          </ul>          
+        </div>
+
+        <!-- main content -->
+        <div class="col-md-9 order-md-2">
+          <h5 class="mb-3"></h5><br>
+          
+         
+            <div class="row">
+              <div class="col-6 col-md-6 mb-3">
+                <img src="assets/img/descarga.png" alt="">
+              </div>
+              <div class="col-6 col-md-6 mb-3">
+                
+              </div>
+              
+            </div>
+
+        </div><!-- end col-9 -->
+      </div><!-- end of row -->
+    </form>
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 2018-2019 jscire</p>
+        
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+     <!-- Core Scripts - Include with every page -->
+    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/plugins/js/jquery-3.3.1.min.js"></script>    
+    <script src="assets/plugins/js/jquery.mask.min.js"></script>
+    <script src="assets/plugins/js/mask-script.js"></script>
+    <script src="assets/scripts/Login.js"></script>
+    <script src="assets/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="assets/plugins/bootstrap/bootstrap-datepicker.js"></script>
+    <script src="assets/plugins/pace/pace.js"></script>
+    <script src="assets/scripts/siminta.js"></script>
+    <!-- Page-Level Plugin Scripts-->
+    <script src="assets/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="assets/plugins/morris/morris.js"></script>
+    <script src="assets/scripts/dashboard-demo.js"></script>
+    
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+    <script type="text/javascript">
+       $(function () {
+            $(".date").datepicker({
+                autoclose: true,
+                todayHighlight: true
+            });
+        });
+    </script>
+</body></html>

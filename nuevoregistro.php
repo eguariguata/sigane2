@@ -3,20 +3,20 @@
 #Si todo va bien, se ejecuta esta parte del código...
 
 include_once "conexion.php";
-$nombrecompletousuario = $_POST["nombrecompletousuario"];
+$nombreusuario = $_POST["nombreusuario"];
 $cedula = $_POST["cedula"];
 $cargo = $_POST["cargo"];
+$tipousuario = $_POST["tipousuario"];
 $username = $_POST["username"];
 $password = $_POST["password"];
-$tipousuario = $_POST["tipousuario"];
 
 
-$sentencia = $conexion->prepare("INSERT INTO usuario(NombreCompletoUsuario, cedulausuario, Cargo, username, password, tipousuario) VALUES (?, ?, ?, ?, ?, ?);");
-$resultado = $sentencia->execute([$nombrecompletousuario, $cedula, $cargo, $username, $password, $tipousuario]);
+$sentencia = $conexion->prepare("INSERT INTO usuario(nombreusuario, cedulausuario, cargo, tipousuario, username, password) VALUES (?, ?, ?, ?, ?, ?)");
+$resultado = $sentencia->execute([$nombreusuario, $cedula, $cargo, $tipousuario, $username, $password]);
 
 if($resultado === TRUE){
 	
-	header("Location: ./checkout.html");
+	header("Location: ./index.html");
 	exit;
 }
 else echo "Algo salió mal. Por favor verifica que la tabla exista";

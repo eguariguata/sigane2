@@ -13,7 +13,7 @@ try {
 
 
 } catch (PDOException $e) {
-    die("Algo sucede con la base de datos: " . $e->getMessage() . "<br/>");
+    echo "Se ha detectado un error al conectar con el servidor DB: ".$e->getMessage();
 }
 ?>  
 

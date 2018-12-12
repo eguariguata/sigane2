@@ -24,7 +24,7 @@
 <header class="header-user-dropdown fixed-top">
 
   <div class="header-limiter">
-    <h1><img class="d-block mx-auto mb-4" src="assets/img/iutoms.jpg" alt="" width="52" height="52"></h1>
+    <h1><img class="d-block mx-auto mb-4" src="assets/img/sigane2.png" alt="" ></h1>
 
     <nav>
       <a href="#">Nuevo</a>
@@ -106,8 +106,8 @@
             <div class="row">
               <div class="col-4 col-md-4 mb-3">
                 <div class="form-group">
-                <label for="nombrecompletousuario">Nombre y Apellido</label>
-                <input type="text" class="form-control" id="nombrecompletousuario" name="nombrecompletousuario" placeholder="Nombre y Apellido" value="" required="">
+                <label for="nombreusuario">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="nombreusuario" name="nombreusuario" placeholder="Nombre y Apellido" value="" required="">
                 <div class="invalid-feedback">
                   Valid first name is required.
                 </div></div>
@@ -115,17 +115,24 @@
               <div class="col-4 col-md-4 mb-3">
                 <div class="form-group">
                 <label for="cedula">Cedula</label>
-                <input type="text" class="form-control" id="cedula" name="cedula" placeholder="cedula" value="" required="">
+                <input type="number" class="form-control" id="cedula" name="cedula" placeholder="Cedula" value="" required="">
                 <div class="invalid-feedback">
                   Valid last name is required.
                 </div></div>
               </div>
               <div class="col-4 col-md-4 mb-3">
-                <div class="form-group">
+              <div class="form-group">                
                 <label for="cargo">Cargo</label>
-                <input type="text" class="form-control" id="cargo" name="cargo" placeholder="Cargo" value="" required="">
+                <select class="custom-select d-block w-100" id="cargo" name="cargo" required="">
+                  <option value="">Seleccione...</option>
+                  <option>Director(a)</option>
+                  <option>Subdirector(a)</option>
+                  <option>Coordinador(a)</option>
+                  <option>Secretario(a)</option>
+                  <option>Docente</option>
+                </select>
                 <div class="invalid-feedback">
-                  Valid first name is required.
+                  Please select a valid state.
                 </div></div>
               </div>
             </div>
@@ -166,7 +173,7 @@
             
             
             <hr class="mb-4">
-            <button class="btn btn-success btn-lg" type="submit" value="registrar"><i class="fa fa-save"></i> Enviar</button>
+            <button class="btn btn-success btn-lg" type="submit" value="registrar"><i class="fa fa-save"></i> Guardar</button>
           </form>
         </div><!-- end col-9 -->
       </div><!-- end of row -->

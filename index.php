@@ -26,7 +26,7 @@ session_start();
 
       <div class="py-5 text-center">
   
-        <img src="assets/img/Sigane2.png" alt="" />>
+        <img src="assets/img/Sigane2.png" alt="" />
        
       </div>
 
